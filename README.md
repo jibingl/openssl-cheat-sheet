@@ -1,5 +1,5 @@
-# openssl-cheat-sheet
-A collection of Openssl commands retrived from the online source of [albertx](https://cheatography.com/albertx/cheat-sheets/openssl/).
+# Openssl-cheat-sheet
+A collection of `openssl` commands retrived from the online source of [albertx](https://cheatography.com/albertx/cheat-sheets/openssl/).
 
 ## Basic
 Descriptions | cmd syntax |
