@@ -76,10 +76,7 @@ Extract the certificate's public key | `openssl x509 -pubkey -noout -in cert.crt
 Extract the public key's modulus in the certificate | `openssl x509 -modulus -noout -in cert.crt`
 Extract the domain certificate from an HTTPS/TLS connection | `openssl s_client -connect domain.com:443 \| openssl x509 -out certificate.crt`
 Convert a certificate from PEM to DER format | `openssl x509 -inform PEM -outform DER -in cert.crt -out cert.der`
-Checking whether the certificate pubic key matches a private key and request file. One step per file. Must match in the output hashes. | 
-`openssl x509 -modulus -in certificate.crt -noout \| openssl dgst -sha256`
-`openssl rsa -modulus -in private.key -noout \| openssl dgst -sha256`
-`openssl req -modulus -in request.csr -noout \| openssl dgst -sha256`
+Checking whether the certificate pubic key matches a private key and request file. One step per file. Must match in the output hashes. | `openssl x509 -modulus -in certificate.crt -noout \| openssl dgst -sha256` `openssl rsa -modulus -in private.key -noout \| openssl dgst -sha256` `openssl req -modulus -in request.csr -noout \| openssl dgst -sha256`
 
 ## Working with TLS
 Descriptions | cmd syntax |
